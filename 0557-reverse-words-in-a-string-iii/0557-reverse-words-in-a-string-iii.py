@@ -4,4 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        return ' '.join([word[::-1] for word in s.split()])
+        words = s.split()
+        reversed_words = [word[::-1] for word in words]
+        reversed_string = ' '.join(reversed_words)
+        return reversed_string
