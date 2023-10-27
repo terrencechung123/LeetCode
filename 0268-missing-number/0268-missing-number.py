@@ -1,8 +1,7 @@
 class Solution:
-    def missingNumber(self, n: List[int]) -> int:
-        mySet=set()
-        for i in range(len(n)+1):
-            mySet.add(i)
-        for x in mySet:
-            if x not in n:
-                return x
+    def missingNumber(self, nums: List[int]) -> int:
+        maxNum = max(nums)
+        minNum = min(nums)
+        for i in range(len(nums)+1):
+            if i not in nums or i == len(nums):
+                return i
