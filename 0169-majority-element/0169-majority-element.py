@@ -6,6 +6,6 @@ class Solution:
                 hashmap[nums[i]] =1
             else:
                 hashmap[nums[i]]= hashmap[nums[i]]+1
-        for num, value in hashmap.items():
-            if value > len(nums)/2:
+        for num in hashmap:
+            if hashmap[num] > len(nums)/2:
                 return num
