@@ -8,4 +8,3 @@ class Solution:
             new_list.append(s[i])
         s.clear()
         s.extend(new_list)
-        return s
