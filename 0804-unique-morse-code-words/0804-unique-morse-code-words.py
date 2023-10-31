@@ -12,6 +12,4 @@ class Solution:
                     new_word += morse[letter_index]
             mySet.add(new_word)
             new_word = ''
-        # for element in new_list:
-        #         mySet.add(element)
         return len(mySet)
