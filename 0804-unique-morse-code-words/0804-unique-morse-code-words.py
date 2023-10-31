@@ -13,6 +13,5 @@ class Solution:
             new_list.append(new_word)
             new_word = ''
         for element in new_list:
-            if element not in mySet:
                 mySet.add(element)
         return len(mySet)
