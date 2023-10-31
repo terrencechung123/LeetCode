@@ -3,8 +3,6 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-        new_num = [nums1[i] for i in range(m)]
-        new_num += [nums2[i] for i in range(n)]
-        new_num=sorted(new_num)
+        new_num = sorted([nums1[i] for i in range(m)] + [nums2[i] for i in range(n)])
         nums1.clear()
         nums1.extend(new_num)
