@@ -3,12 +3,10 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-        new_list = []
-        for i in range(m):
-            new_list.append(nums1[i])
-        for i in range(n):
-            new_list.append(nums2[i])
-        new_list = sorted(new_list)
+        new_num = []
+        new_num = [nums1[i] for i in range(m)]
+        new_num += [nums2[i] for i in range(n)]
+        new_num=sorted(new_num)
+        
         nums1.clear()
-        nums1.extend(new_list)
-        return nums1
+        nums1.extend(new_num)
