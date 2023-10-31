@@ -1,6 +1,6 @@
 class Solution:
     def selfDividingNumbers(self, left: int, right: int) -> List[int]:
-        mySet = set()
+        result = []
         for i in range(left,right+1):
             num_str = str(i)
             isTrue=True
@@ -9,6 +9,6 @@ class Solution:
                     isTrue=False
                     break
             if isTrue:
-                mySet.add(i)
+                result.append(i)
 
-        return sorted(mySet)
+        return result
