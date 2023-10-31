@@ -10,8 +10,8 @@ class Solution:
                 if letter in alphabet:
                     letter_index = alphabet.index(letter)
                     new_word += morse[letter_index]
-            new_list.append(new_word)
+            mySet.add(new_word)
             new_word = ''
-        for element in new_list:
-                mySet.add(element)
+        # for element in new_list:
+        #         mySet.add(element)
         return len(mySet)
