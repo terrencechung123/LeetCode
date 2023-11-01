@@ -1,11 +1,7 @@
-class Solution(object):
-    def isPalindrome(self, x):
-        """
-        :type x: int
-        :rtype: bool
-        """
-        
-        if str(x) == str(x)[::-1]:
-            return True
-        else:
-            return False
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        str_x = str(x)
+        y=''
+        for i in range(len(str_x)):
+            y = str_x[i] + y
+        return y == str_x
