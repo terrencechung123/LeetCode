@@ -1,13 +1,13 @@
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
-        arr = []
-        for i in range(n):
-            if (i+1) % 3 == 0 and (i+1) % 5 == 0:
-                arr.append('FizzBuzz')
-            elif (i+1) % 3 == 0:
-                arr.append('Fizz')
-            elif (i+1) % 5 == 0:
-                arr.append('Buzz')
+        answer = []
+        for i in range(1,n+1):
+            if i % 3 == 0 and i % 5 == 0:
+                answer.append("FizzBuzz")
+            elif i % 3 == 0:
+                answer.append("Fizz")
+            elif i % 5 == 0:
+                answer.append("Buzz")
             else:
-                arr.append(f"{i+1}")
-        return arr
+                answer.append(str(i))    
+        return answer
